@@ -9,19 +9,16 @@ class HomeController extends Controller
 
     public function index()
     {
-        $customers = Customer::all();
-        return view('customers.table', compact('customers'));
+        return view('students.ajax');
+    }
+    public function courses()
+    {
+        return view('courses.ajax');
     }
 
-    public function datatable()
+    public function disciplines()
     {
-        $customers = Customer::all();
-        return view('customers.datatable', compact('customers'));
-    }
-
-    public function ajax()
-    {
-        return view('customers.ajax');
+        return view('disciplines.ajax');
     }
 
 }

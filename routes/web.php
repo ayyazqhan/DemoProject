@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('simple');
-Route::get('/datatable', 'HomeController@datatable')->name('datatable');
-Route::get('/ajax', 'HomeController@ajax')->name('ajax');
+Route::get('/', 'HomeController@index')->name('students');
+Route::get('/disciplines', 'HomeController@disciplines')->name('disciplines');
+Route::get('/courses', 'HomeController@courses')->name('courses');
+
 

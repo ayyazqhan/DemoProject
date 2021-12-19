@@ -42,9 +42,9 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ route('simple') }}">Simple Table</a></li>
-                        <li><a href="{{ route('datatable') }}">Datatables</a></li>
-                        <li><a href="{{ route('ajax') }}">AJAX Datatables</a></li>
+                        <li><a href="{{ route('disciplines') }}">Disciplines</a></li>
+                        <li><a href="{{ route('courses') }}">Courses</a></li>
+                        <li><a href="{{ route('students') }}">Students</a></li>
                     </ul>
                 </div>
             </div>
