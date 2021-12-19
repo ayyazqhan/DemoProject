@@ -14,5 +14,6 @@
 Route::get('/', 'HomeController@index')->name('students');
 Route::get('/disciplines', 'HomeController@disciplines')->name('disciplines');
 Route::get('/courses', 'HomeController@courses')->name('courses');
+Route::get('/enrollment', 'HomeController@enrollment')->name('enrollment');
 
 

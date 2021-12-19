@@ -42,6 +42,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                       <li><a href="{{ route('enrollment') }}">Enrollment</a></li>
                         <li><a href="{{ route('disciplines') }}">Disciplines</a></li>
                         <li><a href="{{ route('courses') }}">Courses</a></li>
                         <li><a href="{{ route('students') }}">Students</a></li>

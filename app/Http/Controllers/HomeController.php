@@ -21,4 +21,10 @@ class HomeController extends Controller
         return view('disciplines.ajax');
     }
 
+    public function enrollment(){
+
+        return view('auth.login');
+        
+    }
+
 }
