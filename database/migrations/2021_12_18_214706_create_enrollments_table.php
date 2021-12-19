@@ -17,9 +17,11 @@ class CreateEnrollmentsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('student_id');
             $table->unsignedInteger('course_id');
+            $table->unsignedInteger('discipline_id');
             $table->string('status')->default('awaiting');
             $table->foreign('student_id')->references('id')->on('students');
             $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('discipline_id')->references('id')->on('disciplines');
             $table->timestamps();
             $table->softDeletes();
         });

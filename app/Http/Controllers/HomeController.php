@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customer;
-
+use Auth;
 class HomeController extends Controller
 {
 
@@ -23,8 +23,15 @@ class HomeController extends Controller
 
     public function enrollment(){
 
-        return view('auth.login');
+        if(!Auth::check()) 
+        {
+            return view('auth.login');
+       
+        }else{
+            return view('enrollment.index');
+        }
+        
         
     }
-
+    
 }

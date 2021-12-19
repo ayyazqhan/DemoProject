@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Student;
 use App\Course;
 use App\Discipline;
+use App\Enrollment;
 use Illuminate\Support\Facades\DB;
 
 class APIController extends Controller
@@ -27,5 +28,13 @@ class APIController extends Controller
         $query = Discipline::select('id','name');
         return datatables($query)->make(true);
     }
+
+    public function getEnrollment()
+    {
+        $query = Enrollment::join('courses','courses.id', '=', 'enrollments.course_id')->join('disciplines','disciplines.id', '=', 'enrollments.discipline_id')->select('Courses.name as courseName','disciplines.name as disciplineName','enrollments.status');
+        return datatables($query)->make(true);
+    }
+
+    
 
 }

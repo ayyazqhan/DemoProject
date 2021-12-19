@@ -14,3 +14,4 @@
 Route::get('/api/v1/courses', 'APIController@getCourses')->name('api.courses.index');
 Route::get('/api/v1/discipline', 'APIController@getDiscipline')->name('api.discipline.index');
 Route::get('/api/v1/students', 'APIController@getStudents')->name('api.students.index');
+Route::get('/api/v1/enrollment', 'APIController@getEnrollment')->name('api.enrollment.index');

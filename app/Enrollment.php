@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Enrollment extends Model
 {
@@ -12,8 +13,9 @@ class Enrollment extends Model
 
     protected $fillable = [
         'status',
-        'user_id',
+        'discipline_id',
         'course_id',
+        'student_id',
         'created_at',
         'updated_at',
         'deleted_at',
